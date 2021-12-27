@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-      post :sign_up, to: 'registrations#create'
+      # post :sign_up, to: 'registrations#create'
       post :login, to: 'sessions#create'
-      get  :validate_token, to: 'sessions#show'
+      # get  :validate_token, to: 'sessions#show'
       resources :orders
     end
   end

@@ -1,7 +1,7 @@
 module Api
   module V1
     class RegistrationsController < ApiController
-      # REGISTER
+      # REGISTER :: NOT REQUIRED!
       def create
         @user = User.create(user_params)
         if @user.valid?

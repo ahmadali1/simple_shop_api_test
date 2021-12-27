@@ -20,7 +20,7 @@ module Api
         end
       end
 
-      def show
+      def show # NOT REQUIRED
         render json: @user
       end
 
