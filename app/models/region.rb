@@ -3,6 +3,6 @@ class Region < ApplicationRecord
   has_many :stores
   has_many :products
 
-  validates :name, :title, :country, :currency, presence: true
+  validates :title, :country, :currency, presence: true
   validates :title, uniqueness: { scope: :user_id }
 end

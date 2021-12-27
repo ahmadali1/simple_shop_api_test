@@ -1,8 +1,6 @@
 module Api
   module V1
     class RegistrationsController < ApiController
-      include Authenticable
-
       # REGISTER
       def create
         @user = User.create(user_params)

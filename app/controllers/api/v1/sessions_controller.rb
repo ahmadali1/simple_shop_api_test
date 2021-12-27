@@ -1,8 +1,6 @@
 module Api
   module V1
     class SessionsController < ApiController
-      include Authenticable
-
       before_action :authenticate!, only: [:show]
 
       # LOGGING IN
