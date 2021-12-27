@@ -1,46 +1,20 @@
-## Prerequisites
-The setups steps expect following tools installed on the system.
+## Simple Shop API Test
 
-* Github
-* Ruby 3.0.0
-* Rails 6.1.4
-* Postgres
+Task Description: https://github.com/MorphosisApps/simpleshop/blob/master/README-Api.md
 
-1. Check out the repository
-```bash
-git clone git@github.com:masroorhussainv/rails-jwt-boilerplate.git
-```
+## API Documentation:
+https://documenter.getpostman.com/view/8377329/UVREm5Bv
 
-2. Create and setup the database
-Run the following commands to create database and run migrations.
-```bash
-bundle exec rake db:create
-bundle exec rake db:migrate
-```
-3. Set up environment variables
-Create `.env` file in the root of the project and provide the required environment variables in the `.env` file.
-```bash
-touch .env
-```
-Check the `.env.example` file to see the required environment variables data.
+### Instructions to Setup:
+1) `rails db:create`
+2) `rails db:schema:load`
+3) `rails db:seed`
+4) add `SECRET_KEY_BASE=THIS_is_SECRET_key_BASE` to `.env`
+5) `rails server`
 
-4. Start the Rails server
-You can start the rails server using the command given below.
-```bash
-bundle exec rails s
-```
-And now you can visit the site with the URL http://localhost:3000
+#### Incomplete Tasks:
+1) Rspecs
+2) Proper API documentation
 
-5. Check routes
-You can check the application routes using the command given below
-```bash
-bundle exec rails routes
-```
-
-### To Do list
-- [x] Add JWT Sign-up
-- [x] Add JWT Sign-in
-- [] Add serializer to return uniform response from API endpoints
-- [] Add Update user, Delete user actions in Registrations controller
-- [] Add Logout user action in Sessions controller
-- [] Add Omniauth support.
+#### Special Thanks:
+Special Thanks to the author of https://github.com/masroorhussainv/rails-jwt-boilerplate
